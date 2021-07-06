@@ -11,8 +11,10 @@ export default function Alpha ({route,navigation}){
       <View style = {{flex:1,backgroundColor: '#F5956C', alignItems:'center', justifyContent:'space-evenly'}}> 
         <BackButton marginL = {'5%'} screen = {'ChooseAct'} navigation = {navigation}/>
         <View style = {{backgroundColor: '#3DEE99', flexDirection: 'row',alignItems: 'center', justifyContent: 'center' , width:'90%', height: '30%',padding:'2%', borderRadius: 10, borderColor:'#68F8B3', borderWidth: 2}}>
-            <Text style = {{color: 'white',fontSize:70,fontFamily: 'Roboto-Medium'}}>E e</Text>
-            <FontAwesomeIcon style = {{color:'white'}} size = {32} icon={ faVolumeUp } />
+            <Text style = {{color: 'white',fontSize:70,fontFamily: 'Roboto-Medium'}}>{alfa[0].letter}</Text>
+            <TouchableOpacity style={{alignSelf:'flex-end',marginBottom: '5%'}} onPress = {() => {alfa[0].sound.play()}}>    
+                    <FontAwesomeIcon style = {{color:'white'}} size = {32} icon={ faVolumeUp } />
+            </TouchableOpacity>
         </View>
         <View style = {{backgroundColor: '#FFB08E', width:'90%', height: '50%',padding:'2%', borderRadius: 10, borderColor:'#FFC8B0', borderWidth: 2, justifyContent: 'space-evenly'}}> 
             {alfa[0].related.map((item,index) =>{

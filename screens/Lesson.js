@@ -18,7 +18,7 @@ export default function Lesson({route,navigation}){
         </View>
         <View style = {{backgroundColor: '#D06BFF', flexDirection: 'row',alignItems: 'center', justifyContent: 'center' , width:'90%', height: '30%',padding:'2%', borderRadius: 10, borderColor:'#E09EFF', borderWidth: 2}}>
             <Image source = {exercise_obj.image} style = {{width: 70, height:70}}/> 
-            <TouchableOpacity onPress = {() => {exercise_obj.sound.play()}}>  
+            <TouchableOpacity style = {{alignSelf:'flex-end',marginBottom: '5%'}} onPress = {() => {exercise_obj.sound.play()}}>  
               <FontAwesomeIcon style = {{color:'white'}} size = {32} icon={ faVolumeUp } />
             </TouchableOpacity>
         </View>

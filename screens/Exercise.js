@@ -9,7 +9,7 @@ import {basic,merge, fisherYates} from './Exercises.js';
 const right = require('../assets/img/certo.png');
 const wrong = require('../assets/img/errado.png');
 
-export default function Exercise2({route,navigation}){
+export default function Exercise({route,navigation}){
     const {rand} = route.params;
     const exercise_obj = basic[rand]
 

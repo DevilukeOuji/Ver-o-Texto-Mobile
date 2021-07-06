@@ -22,7 +22,10 @@ function ColorSyl(props){
                 </View>
             )}
             horizontal = {true}
-            keyExtractor = {item => item.id.toString()}
+            keyExtractor = {(item,index) => {
+                console.log(item.id.toString())
+                return item.id.toString()
+            }}
             />
             <TouchableOpacity onPress = {() => {props.exercise.sound.play()}}>  
                 <FontAwesomeIcon style = {{color:'white'}} size = {32} icon={ faVolumeUp } />

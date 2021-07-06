@@ -13,13 +13,13 @@ export default function Home ({route,navigation}){
 
   const items = [
     { name: 'Iniciar',screen: 'ChooseAct',code: '#D06BFF', border:'#E09FFF',icon:faBook},
-    { name: 'Troféus', screen: 'test',code: '#FDD856', border:'#FFE68C', icon:faTrophy},
+    { name: 'Troféus', screen: 'Home',code: '#FDD856', border:'#FFE68C', icon:faTrophy},
     { name: 'Configurar', screen: 'Config',code: '#3DEE99', border: '#93FFCB', icon:faCog},
     { name:'Sobre', screen: 'About',code: '#5FE3EC', border: '#9DF9FF', icon:faQuestionCircle},
   ]
   
   return (
-    <ImageBackground source = {back} style={{flex:1, alignItems: 'center', width: '100%', height: '100%'}}>
+    <View style={{flex:1, alignItems: 'center',backgroundColor:'#F5956C'}}>
       <StatusBar barStyle = 'dark-content' backgroundColor="#F5956C" />
       <View style = {{alignItems:'center', marginTop: '10%'}}> 
         <Image source = {logo} style = {{width: 120, height: 120}}/>
@@ -45,7 +45,7 @@ export default function Home ({route,navigation}){
           )}
           />  
       </View>
-    </ImageBackground>
+    </View>
   );
 }
 
